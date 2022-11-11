@@ -1,0 +1,9 @@
+<script>
+	if ('serviceWorker' in navigator) {
+		try {
+			await navigator.serviceWorker.register("/sw.js", { scope: "/", })
+		} catch (err) {
+			console.error(`Registration of a service worker failed with error ${err}`)
+		}
+	}
+</script>

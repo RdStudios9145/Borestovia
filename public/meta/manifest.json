@@ -1,0 +1,51 @@
+{
+	"background_color": "#252525",
+	"description": "Time to be knifty",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "favicon.png",
+			"sizes": "48x48",
+			"type": "image/png"
+		},
+		{
+			"src": "favicon.png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "favicon.svg",
+			"sizes": "72x72 96x96 128x128 256x256"
+		},
+		{
+			"src": "favicon.svg",
+			"sizes": "any"
+		}
+	],
+	"name": "Officially Knifty",
+	"protocol_handlers": [
+		{
+			"protocol": "web+knifty",
+			"url": "/linkedweb?data=%s"
+		},
+		{
+			"protocol": "knifty",
+			"url": "/linked?data=%s"
+		}
+	],
+	"scope": "/../../../",
+	"short_name": "Knifty",
+	"shortcuts": [
+		{
+			"name": "Home",
+			"url": "/~",
+			"description": "The Officially Knifty Website!"
+		},
+		{
+			"name": "The Knifty Club",
+			"url": "/club",
+			"description": "A club of very knifty people"
+		}
+	],
+	"start_url": "/../../../~",
+	"theme_color": "#252525"
+}

@@ -1,0 +1,53 @@
+<div id="navbar_container_div" style="height: 60px; display: block; position: relative;">
+	<header style="background-color: #0051ff; width: 100%; margin: 0; color: white; position: relative;">
+		<nav style="box-sizing: border-box; max-width: 146rem; display: flex; margin-left: auto; margin-right: auto; justify-content: space-between;">
+			<ul id="navbar_left" style="list-style-type: none; display: flex;">
+				<li class="header_list_elem"><a href="/~">
+					<div>
+						<button class="header_button">
+							<span>Officially Knifty</span>
+						</button>
+					</div>
+				</a></li>
+				<li class="header_list_elem"><a href="/~">
+					<div>
+						<button class="header_button hover">
+							<span>Home</span>
+						</button>
+					</div>
+				</a></li>
+				<li class="header_list_elem"><a href="/club">
+					<div>
+						<button class="header_button hover">
+							<span>Club</span>
+						</button>
+					</div>
+				</a></li>
+				<li class="header_list_elem"><a href="/else">
+					<div>
+						<button class="header_button hover">
+							<span>Something Else</span>
+						</button>
+					</div>
+				</a></li>
+			</ul>
+			<ul id="navbar_right">
+				<li class="header_list_elem">
+					<div>
+						<button class="header_button hover" onclick="function run() { var mode = document.body.dataset.mode; if (mode == 'dark') return document.body.dataset.mode = 'light'; return document.body.dataset.mode = 'dark' } run()">
+							<span id="navbar_light_sun">☀️</span>
+							<span id="navbar_dark_moon">🌙</span>
+						</button>
+					</div>
+				</li>
+				<li class="header_list_elem">
+					<div>
+						<button id="header_button_user_submenu_container" class="header_button hover" data-show-child-nav="0" onclick="function run() { const elem = document.getElementById('header_button_user_submenu_container'); elem.dataset['show-child-nav'] = (1 - parseInt(elem.dataset['show-child-nav']).toString()) } run()">
+							
+						</button>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+</div>
